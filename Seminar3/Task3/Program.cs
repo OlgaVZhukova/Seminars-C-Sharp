@@ -25,9 +25,9 @@ int[] InputPoint(int point)
     return answer;
 }
 
-int Power2(int arg)
+double Power2(int arg)
 {
-    return arg*arg;
+    return Math.Pow(arg, 2); // return arg*arg;
 }
 
 int[] p1 = InputPoint(1);
