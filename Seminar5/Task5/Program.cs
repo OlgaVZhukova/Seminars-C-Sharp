@@ -30,7 +30,7 @@ void PrintArray(int[] array)
     System.Console.WriteLine();
 }
 
-int[] myArray = CreateArray(10, 0, 10);
+int[] myArray = CreateArray(9, 0, 10);
 PrintArray(myArray);
 
 int CountNumbers(int[] array)
@@ -60,6 +60,11 @@ else
 for (int i = 0; i < myArray.Length / 2; i++)
 {
     secondArray[i] = myArray[i] * myArray[myArray.Length - 1 - i];
+}
+
+if (myArray.Length % 2 != 0) // если нечетное
+{
+    secondArray[secondArray.Length - 1] = myArray[secondArray.Length - 1];
 }
 
 PrintArray(secondArray);
