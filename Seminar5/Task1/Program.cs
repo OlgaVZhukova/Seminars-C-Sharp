@@ -57,3 +57,4 @@ int sumPlus = SumPositive(arr);
 int sumMinus = SumNegative(arr);
 System.Console.WriteLine($"Сумма положительных элементов = {sumPlus}, сумма отрицательных элементов = {sumMinus}");
 
+// вариант написания одной функцией подсчета суммы с доп. параметрами на Семинаре, таймкод: 0:52:24
