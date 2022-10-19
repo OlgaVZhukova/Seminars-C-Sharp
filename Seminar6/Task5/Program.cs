@@ -22,10 +22,21 @@ void PrintArray(int[] array)
     System.Console.WriteLine();
 }
 
+int[] Copy(int[] array)
+{
+    int[] arr = new int [array.Length];
+    for (int i = 0; i < array.Length; i++)
+    {
+        arr[i] = array[i];
+    }
+    return arr;
+}
+
 int[] array = RandomArrGen();
 int[] array2 = array;
+int[] array3 = Copy(array);
 PrintArray(array);
 array[0] = -1;
 PrintArray(array);
 PrintArray(array2);
-
+PrintArray(array3);
