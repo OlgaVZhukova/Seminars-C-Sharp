@@ -82,3 +82,4 @@ int[,] matrix = RandomMatrixFill(line, column);
 PrintMatrix(matrix);
 System.Console.WriteLine(SumOfMaxLine(matrix, line, column) - SumOfMinColumn(matrix, line, column));
 
+// еще способ решения: сначала посчитать массивы максимумов, минимумов, а потом массивы сложить
