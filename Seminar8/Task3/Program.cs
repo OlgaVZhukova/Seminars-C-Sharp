@@ -54,6 +54,17 @@ int[] Dictionary(int[,] matrix)
 	return dict;
 }
 
+int[] FrequeDict(int[,] matrix)
+{
+	int[] dict = new int [10];
+	foreach (var item in matrix)
+	{
+		dict[item]++;
+	}
+	return dict;
+}
+
+
 int Prompt(string message)
 {
 	Console.Write(message);
@@ -69,5 +80,5 @@ int[,] myMatrix = CreateMatrix(y, x, min, max);
 Console.WriteLine("Ваша матрица > ");
 PrintMatrix(myMatrix);
 Console.WriteLine();
-int [] dict = Dictionary(myMatrix);
+int [] dict = FrequeDict(myMatrix);
 PrintArray(dict);
